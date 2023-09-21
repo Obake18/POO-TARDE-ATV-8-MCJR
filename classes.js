@@ -39,5 +39,19 @@ class CarrinhoDeCompras {
     adicionarProduto(produto) {
         this.listaDeCompras.push(produto);
     }
-}
 
+    /**
+     * Calcula o valor total dos produtos no carrinho.
+     * @returns {number} O valor total calculado.
+     */
+    calcularValorTotal() {
+        let valorTotal = 0;
+        for (let i = 0; i < this.listaDeCompras.length; i++) {
+            valorTotal += this.listaDeCompras[i]._precoUnitario; 
+            
+            /**
+             * Adicione o preço do produto ao total */
+        } 
+        return valorTotal;
+    }
+}
