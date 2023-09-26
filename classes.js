@@ -55,3 +55,25 @@ class CarrinhoDeCompras {
         return valorTotal;
     }
 }
+
+class Cardapio {
+    constructor(comida){
+        this.listaDeComidas = [];
+
+    } 
+
+    adicionarComidas(comida){
+        this.listaDeComidas.push(comida);
+    }
+
+    removerComidas(codigo){
+        for(let i=0;  i <; i++){
+            if () {
+                this.listaDeComidas.splice(i, 1);
+                
+            }
+    }
+}
+
+}
+    
