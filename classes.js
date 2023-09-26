@@ -87,10 +87,11 @@ class Cardapio {
      * @param {number} codigo - O código identificador da comida a ser removida.
      */
     removerComidas(codigo) {
-        for (let i = 0; i < this.codigo.length; i++) {
+        for (let i = 0; i < this.listaDeComidas.length; i++) {
             if (this.listaDeComidas[i].codigo === codigo) {
                 this.listaDeComidas.splice(i, 1);
                 return; // Encerra o loop após encontrar e remover a comida.
+                alert ('Encontrado!')
             }
         }
     }
