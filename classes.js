@@ -55,25 +55,43 @@ class CarrinhoDeCompras {
         return valorTotal;
     }
 }
-
+/**
+ * Classe que representa um cardápio de comidas.
+ */
 class Cardapio {
-    constructor(comida){
+    /**
+     * Cria uma instância de Cardapio.
+     * @constructor
+     */
+    constructor() {
+        /**
+         * Lista de comidas disponíveis no cardápio.
+         * @type {Array}
+         */
         this.listaDeComidas = [];
+    }
 
-    } 
-
-    adicionarComidas(comida){
+    /**
+     * Adiciona uma comida ao cardápio.
+     * @param {object} comida - Objeto que representa uma comida a ser adicionada.
+     * @param {number} comida.codigo - O código identificador da comida.
+     * @param {string} comida.nome - O nome da comida.
+     * @param {number} comida.preco - O preço da comida.
+     */
+    adicionarComidas(comida) {
         this.listaDeComidas.push(comida);
     }
 
-    removerComidas(codigo){
-        for(let i=0;  i <; i++){
-            if () {
+    /**
+     * Remove uma comida do cardápio com base no código.
+     * @param {number} codigo - O código identificador da comida a ser removida.
+     */
+    removerComidas(codigo) {
+        for (let i = 0; i < this.codigo.length; i++) {
+            if (this.listaDeComidas[i].codigo === codigo) {
                 this.listaDeComidas.splice(i, 1);
-                
+                return; // Encerra o loop após encontrar e remover a comida.
             }
+        }
     }
 }
-
-}
-    
